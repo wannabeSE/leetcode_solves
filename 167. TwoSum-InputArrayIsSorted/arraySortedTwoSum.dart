@@ -6,10 +6,10 @@ class Solution {
       int sum = numbers[left] + numbers[right];
       if (sum == target) {
         return [left + 1, right + 1];
-      } else if (sum < target) {
-        right++;
+      } else if (sum > target) {
+        right--;
       } else {
-        left--;
+        left++;
       }
     }
     return [];
@@ -18,7 +18,6 @@ class Solution {
 
 void main(List<String> args) {
   Solution s = Solution();
-  var res = s.twoSum([-1, 0], -1);
+  var res = s.twoSum([2, 3, 4], 6);
   print(res);
-
 }
