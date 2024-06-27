@@ -14,8 +14,6 @@ class Solution:
         self.reverser(0, len(nums) - 1 - k, nums, 0, len(nums) - k - 1)
         self.reverser(p1=len(nums) - k, p2=len(nums) - 1, nums=nums, startPoint=len(nums) - k, endPoint=len(nums))
         self.reverser(0, len(nums)-1, nums, 0, len(nums))
-        # for i in reversed(nums):
-        #     t.append(i)
         print(nums)
 t = Solution()
 t.rotate([1,2,3,4,5,6], 11)

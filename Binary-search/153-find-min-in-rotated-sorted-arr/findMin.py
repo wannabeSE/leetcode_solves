@@ -2,7 +2,7 @@ def findMin(nums: list) -> int:
     l, r = 0, len(nums) - 1
     minimum = nums[0]
     while l <= r:
-        if nums[l] < nums[r]: #if we get to a sub array that is already sorted and its left val < right val then we update the min and break the loop
+        if nums[l] < nums[r]: #?if we get to a sub array that is already sorted and its left val < right val then we update the min and break the loop
             minimum = min(minimum, nums[l])  
             break
         mid = (l + r) // 2

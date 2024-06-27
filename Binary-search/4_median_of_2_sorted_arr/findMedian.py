@@ -3,7 +3,7 @@ def findMedianSortedArrays(nums1: list, nums2: list) -> float:
     totalSize = size1 + size2
     onLeft = (size1 + size2 + 1) // 2
     if size1 > size2:
-        return findMedianSortedArrays(nums2, nums1) #!swapping the arrays is a must do
+        return findMedianSortedArrays(nums2, nums1) #? swapping the arrays is a must do
     low, high = 0, size1
     while low <= high:
         mid1 = (low + high) // 2
