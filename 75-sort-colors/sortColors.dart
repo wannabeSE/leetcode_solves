@@ -11,7 +11,7 @@ class Solution {
     for (int n in nums) {
       count[n] += 1;
     }
-    int r = count[0], w = count[1], b = count[2];
+    int r = count[0], w = count[1];
     helper(nums, 0, r, 0);
     helper(nums, r, r + w, 1);
     helper(nums, r + w, nums.length, 2);

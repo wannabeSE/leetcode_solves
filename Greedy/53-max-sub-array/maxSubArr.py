@@ -1,4 +1,4 @@
-def maxSubArr(nums: list) -> int:
+def maxSubArr(nums: list) -> int: #? Kadane's Algo
     res = nums[0]
     currSum = 0
     for n in nums:
