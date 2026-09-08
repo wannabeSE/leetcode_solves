@@ -1,6 +1,7 @@
 def longestConsecutive(nums: list) -> int:
     numSet = set(nums) 
     longest = 0
+    print(numSet)
     for num in numSet:
         if (num-1) not in numSet: #look up in set takes O(1)
             length = 0
