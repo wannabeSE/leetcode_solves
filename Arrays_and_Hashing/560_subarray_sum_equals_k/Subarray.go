@@ -10,9 +10,6 @@ func subArraySum(nums []int, k int) int {
 	prefixSumFreq = map[int]int{
 		0: 1,
 	}
-	if len(nums) == 1 && nums[0] == k {
-		return 1
-	}
 	for _, v := range nums {
 		preSum += v //prefix summation
 		exclude := preSum - k
